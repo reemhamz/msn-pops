@@ -1,7 +1,133 @@
-body {
-    background-color: wheat;
+html {
+  font-size: 62.5%;
 }
 
-textarea {
-    resize: none;
+body {
+  background: wheat;
+  font-family: serif;
+}
+
+.msn {
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+}
+
+.list {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.list li {
+  margin: 8px;
+}
+
+.msnToolbar {
+  align-items: center;
+  padding-left: 30px;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(178, 189, 219, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.msnChatter {
+  padding: 10px;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    41deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(129, 154, 195, 1) 50%,
+    rgba(209, 205, 205, 1) 100%
+  );
+}
+
+.messages {
+  height: 200px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.friendsEmail,
+.friendsMessage,
+.friendsName,
+button {
+  font-size: 1.5rem;
+}
+
+.friendsEmail {
+  background: #edf0ff;
+  color: navy;
+  /* height: 100px; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.friendsName,
+.friendsMessage {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  display: inline-block;
+}
+
+.friendsName {
+  color: red;
+  padding-left: 10px;
+}
+
+.friendsMessage {
+  padding-left: 30px;
+  color: grey;
+}
+
+.myMessageBox {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ffffff;
+  height: 100px;
+}
+
+.iconToolbar {
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(178, 189, 219, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.myMessage {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+button {
+  padding: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
