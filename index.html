@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="setup.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="setup.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Popups</title>
   </head>
@@ -19,42 +22,47 @@
         <li>Games</li>
       </ul>
       <div class="msnChatter">
-          <div class="messages">
-            <span class="friendsEmail">
-                To: sk8rpunk182@hotmail.com
-            </span>
-            <span class="friendsName">
-                ⭐️~||*JoRdAn*||~⭐️
-            </span>
-                <span class="friendsMessage">
-                    <p>heyyy sup?? the rok wuz so cool 2day agst rey mysterio!</p>
-                    <p>i rlly dint thin k wed win</p>
-                    <p>guess andy owes us a 7up!! 😎</p>
-                </span>
-            </div>
-            <div class="myMessageBox">
-                <ul class="iconToolbar list">
-                    <li>🅰 ▾</li>
-                    <li>🙂 ▾</li>
-                    <li>🔊 Voice Clip</li>
-                    <li>😉 ▾</li>
-                    <li>🌁 ▾</li>
-                    <li>🎁 ▾</li>
-                    <li>🥴</li>
-                </ul>
-                <div class="myMessage">
-                    <button class="btnSend">Send</button>
-                </div>
-            </div>
+        <div class="messages">
+          <span class="friendsEmail"> To: sk8rpunk182@hotmail.com </span>
+          <span class="friendsName"> ⭐️~||*JoRdAn*||~⭐️ </span>
+          <span class="friendsMessage">
+            <p>heyyy sup?? the rok wuz so cool 2day agst rey mysterio!</p>
+            <p>i rlly dint thin k wed win</p>
+            <p>guess andy owes us a 7up!! 😎</p>
+          </span>
+        </div>
+        <div class="myMessageBox">
+          <ul class="iconToolbar list">
+            <li><span class="emoji">𝘼</span>▾</li>
+            <li><span class="emoji">🙂</span> ▾</li>
+            <li><span class="emoji">🔊</span>Voice Clip</li>
+            <li><span class="emoji">😉</span> ▾</li>
+            <li><span class="emoji">🌁</span> ▾</li>
+            <li><span class="emoji">🥴</span></li>
+          </ul>
+          <div class="myMessage">
+            <label for="myMessage" class="visuallyHidden">Type your message here</label>
+            <textarea name="myMessage" id="myMessage" cols="30" rows="10" oninput="sendNotGray()"></textarea>
+            <button class="btnSend">Send</button>
+            
+          </div>
+        </div>
       </div>
       <div class="profilePictures">
         <div class="friendsPicture">
-            <img src="/assets/southPark.jpg" alt="south park characters walking">
+          <img
+            src="/assets/southPark.jpg"
+            alt="south park characters walking"
+          />
         </div>
         <div class="myPicture">
-            <img src="/assets/pokemon.jpg" alt="screenshot of Pokémon Sapphire video game">
+          <img
+            src="/assets/pokemon.jpg"
+            alt="screenshot of Pokémon Sapphire video game"
+          />
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

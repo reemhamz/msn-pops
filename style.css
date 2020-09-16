@@ -15,15 +15,38 @@ body {
 
 .list {
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .list li {
-  margin: 8px;
+  padding: 0 8px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.list li:hover {
+   background: rgb(231, 231, 231);
+  background: linear-gradient(
+    50deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(178, 189, 219, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: 0.5px solid navy;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-right: 5px;
 }
 
 .msnToolbar {
   align-items: center;
+  height: 30px;
   padding-left: 30px;
   background: rgb(231, 231, 231);
   background: linear-gradient(
@@ -32,6 +55,11 @@ body {
     rgba(178, 189, 219, 1) 50%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+.msnToolbar li:first-letter,
+button:first-letter {
+  text-decoration: underline;
 }
 
 .msnChatter {
@@ -58,14 +86,14 @@ body {
 .friendsEmail,
 .friendsMessage,
 .friendsName,
+textarea,
 button {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .friendsEmail {
   background: #edf0ff;
   color: navy;
-  /* height: 100px; */
   display: flex;
   align-items: center;
   padding: 10px;
@@ -75,7 +103,9 @@ button {
 }
 
 .friendsName,
-.friendsMessage {
+.friendsMessage,
+textarea,
+button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 100;
   display: inline-block;
@@ -115,15 +145,35 @@ button {
   );
 }
 
+.iconToolbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .myMessage {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.myMessage textarea {
+  border: 0;
+  border-radius: 10px;
+  height: 65px;
+  width: 90%;
+  position: relative;
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
 }
 
 button {
   padding: 10px;
+  margin-right: 10px;
+  color: #b5bfdb;
+  font-weight: bold;
 }
 
 img {
