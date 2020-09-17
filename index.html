@@ -7,12 +7,14 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="setup.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Popups</title>
   </head>
   <body>
     <main class="msn">
+      <audio src="/assets/msnSound.mp3"></audio>
       <ul class="msnToolbar list">
         <li>Invite</li>
         <li>Send Files</li>
@@ -41,25 +43,31 @@
             <li><span class="emoji">🥴</span></li>
           </ul>
           <div class="myMessage">
-            <label for="myMessage" class="visuallyHidden">Type your message here</label>
-            <textarea name="myMessage" id="myMessage" cols="30" rows="10" oninput="sendNotGray()"></textarea>
+            <label for="myMessage" class="visuallyHidden"
+              >Type your message here</label
+            >
+            <textarea
+              name="myMessage"
+              id="myMessage"
+              cols="30"
+              rows="10"
+            ></textarea>
             <button class="btnSend">Send</button>
-            
           </div>
         </div>
       </div>
-      <div class="profilePictures">
-        <div class="friendsPicture">
-          <img
-            src="/assets/southPark.jpg"
-            alt="south park characters walking"
-          />
+      <div id="popup">
+        <div class="popupHeader">
+          <img src="/assets/msnIcon.png" alt="MSN icon">
+          <span>MSN Messenger</span>
+          
         </div>
-        <div class="myPicture">
-          <img
-            src="/assets/pokemon.jpg"
-            alt="screenshot of Pokémon Sapphire video game"
-          />
+        <div class="popupMessage">
+          <span class="meanBot">🤖 Mean Bot 🤖</span>
+          <span id="meanMessages"></span>
+          <div class="popupFooter"> 
+            <img src="/assets/msnLogo.png" alt="MSN's logo">
+          </div>
         </div>
       </div>
     </main>

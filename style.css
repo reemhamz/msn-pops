@@ -4,13 +4,21 @@ html {
 
 body {
   background: wheat;
+  height: 100%;
   font-family: serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/windowsXP.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .msn {
   width: 500px;
   height: 500px;
-  border: 2px solid red;
+  position: relative;
 }
 
 .list {
@@ -25,11 +33,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .list li:hover {
-   background: rgb(231, 231, 231);
+  background: rgb(231, 231, 231);
   background: linear-gradient(
     50deg,
     rgba(231, 231, 231, 1) 0%,
@@ -174,10 +181,82 @@ button {
   margin-right: 10px;
   color: #b5bfdb;
   font-weight: bold;
+  cursor: not-allowed;
 }
 
-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+#popup {
+  visibility: hidden;
+  position: absolute;
+  top: 30%;
+
+  left: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 3px;
+  color: navy;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(178, 189, 219, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+.popupHeader img {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+}
+
+.popupMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 100%;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(178, 189, 219, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.meanBot {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+#meanMessages {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.popupFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.popupFooter img {
+  height: 15px;
+  width: 40px;
 }
